@@ -6,7 +6,6 @@ class PropertiesController < ApplicationController
     @property = Property.new
     2.times { @property.nearest_stations.build }
   end
-
   def create
     @property = Property.new(property_params)
     if @property.save
@@ -20,7 +19,7 @@ class PropertiesController < ApplicationController
   def index
     @properties = Property.all
   end
-
+  
   def show
 
   end
