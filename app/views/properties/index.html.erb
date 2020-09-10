@@ -17,13 +17,13 @@
       <td><%= "#{property.age} year (e.g. ADA)" %></td>
       <td><%= property.note %></td>
       <td><%= link_to 'Details', property_path(property.id) %></td>
-      <td><%= link_to 'editing', edit_property_path(property.id) %></td>
+      <td><%= link_to 'Editing', edit_property_path(property.id) %></td>
       <td>
-        <%= link_to 'delete', property_path(property.id), method: :delete, data: { confirm: 'Are you sure you want to delete it?' } %>
+        <%= link_to 'Delete', property_path(property.id), method: :delete, data: { confirm: 'Are you sure you want to delete it?' } %>
       </td>
     </tr>
   <% end %>
   </table>
   <br><br>
-  <%= link_to 'Register your property', new_property_path %>
+  <%= link_to 'Register property', new_property_path %>
 </div>
